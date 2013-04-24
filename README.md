@@ -200,6 +200,10 @@ A faker generator has many of them, packaged in "providers". Here is a list of t
     fake.word()                        # voluptas
     fake.words()                       # ['optio', 'et', 'voluptatem']
 
+### faker.providers.Airline:
+
+    fake.airline()                     # Ameristar Air Cargo
+    fake.realAirline()                 # Hawaiian Airlines
 
 
 ## Localization

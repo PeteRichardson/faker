@@ -16,6 +16,7 @@ DEFAULT_PROVIDERS = (
     'UserAgent',
     'File',
     'Python',
+    'Airline',
 )
 
 from faker.generator import  Generator
