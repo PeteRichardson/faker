@@ -5,12 +5,12 @@ from ..Airline import  Provider as AirlineProvider
 class Provider(AirlineProvider):
 
     formats = (
-        '{{realAirline}}',
+        '{{airline}}',
         '{{lastName}} {{airlineSuffix}}',
         '{{state}} {{airlineSuffix}}'
     )
 
-    realAirlines = (
+    airlines = (
         'ABX Air', 'Air Choice One', 'Air Flamenco', 'Air Transport International', 'Air Wisconsin', 'AirNet Express', 'AirNow', 'AirTran Airways', 'Alaska Airlines', 'Allegiant Air', 'Aloha Air Cargo', 'American Airlines', 'American Eagle Airlines', 'Ameriflight', 'Amerijet International', 'Ameristar Air Cargo', 'Arctic Circle Air', 'Asia Pacific Airlines', 'Astar Air Cargo', 'Atlas Air',
         'Bering Air',
         'Cape Air', 'Capital Cargo International Airlines', 'Centurion Air Cargo', 'Chautauqua Airlines', 'CommutAir', 'Compass Airlines',
@@ -46,10 +46,6 @@ class Provider(AirlineProvider):
         'Transport',
         'Wings'
     )
-
-    @classmethod
-    def realAirline(cls):
-        return cls.randomElement(cls.realAirlines)
 
     @classmethod
     def airlineSuffix(cls):

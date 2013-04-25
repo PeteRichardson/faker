@@ -202,9 +202,17 @@ A faker generator has many of them, packaged in "providers". Here is a list of t
 
 ### faker.providers.Airline:
 
-    fake.airline()                     # Ameristar Air Cargo
-    fake.realAirline()                 # Hawaiian Airlines
+    fake.airline()                     # Missouri Commuter Jet
 
+### faker.providers.Airport:
+    fake.airport()                     # San Francisco International Airport (SFO)
+    fake.airportCode()                 # SJC
+    fake.airportName()                 # Galileo Galilei Airport
+    fake.airportLocation()             # Puebla, Mexico
+    myAirport = fake.airportObject()   # <faker.providers.Airport.Airport instance>
+    myAirport.name                     # Oradea International Airport
+    myAirport.code                     # OMR
+    myAirport.location                 # Oradea, Romania
 
 ## Localization
 

@@ -3,9 +3,9 @@ from . import BaseProvider
 
 class Provider(BaseProvider):
 
-    formats = ['{{realAirline}}', ]
+    formats = ['{{airline}}', ]
 
-    realAirlines = ['Qantas', 'Aeroflot', ]
+    airlines = ['Qantas', 'Aeroflot', ]
 
     def airline(self):
         """
@@ -13,10 +13,3 @@ class Provider(BaseProvider):
         """
         format = self.randomElement(self.formats)
         return self.generator.parse(format)
-
-    @classmethod
-    def realAirline(cls):
-        """
-        :example 'United Airlines'
-        """
-        return cls.randomElement(cls.realAirlines)
