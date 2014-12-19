@@ -34,6 +34,8 @@ setup(name='fake-factory',
     url='http://github.com/joke2k/faker',
     license='MIT License',
     packages=find_packages('./'),
+    package_data={'': ['providers/en_US/*.dat','providers/en_US/*.dat']},
+    include_package_data=True,
     platforms=["any"],
     test_suite='faker.tests',
 )
